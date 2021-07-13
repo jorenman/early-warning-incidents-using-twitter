@@ -181,7 +181,7 @@ def get_tweet_stream():
     auth.set_access_token(access_token, access_token_secret)
     stream = Stream(auth, l)
 
-    stream.filter(track=['peter'], languages=['nl'])
+    stream.filter(track=['demonstratie'], languages=['nl'])
 
 def process_tweet(status):
     global messages_processed
